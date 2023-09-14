@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="script.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
@@ -44,29 +45,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <h1 class="w3-margin w3-jumbo">React content</h1>
     <!-- <p class="w3-xlarge">Template by w3.css</p> -->
     <!-- <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button> -->
-    <div class="search-container">
-      <form action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
+    <div class="search-wrapper">
+      <label for="search">Search videos</label>
+      <input type="search" id="search" data-search >
     </div>
   </header>
 
 <div class="container">
   <h1>React Content</h1>
-  <div class="row">
-    <div class="col-md-4 iframeContainerStyle">
+  <div class="row videoLists">
+    <div class="col-md-4 iframeContainerStyle" id="framevalue">
         <iframe width="300" height="300" src="https://www.youtube.com/embed/slBh9WYMSmA" title="React hook useState()" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <div class="col-md-4 iframeContainerStyle">
-        <span>
-          <iframe width="300" height="300" src="https://www.youtube.com/embed/cgANVmixFXk?si=5N8BMu08_oktN6WY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </span>
+    <div class="col-md-4 iframeContainerStyle" id="framevalue">
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/cgANVmixFXk?si=5N8BMu08_oktN6WY" title="React hook useEffect()" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <div class="col-md-4 iframeContainerStyle">
-        <span>
+    <div class="col-md-4 iframeContainerStyle" id="framevalue">
           <iframe width="300" height="300" src="https://www.youtube.com/embed/oLvlvezsiFs" title="testing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </span>
       </div>
   </div>
 </div>
